@@ -1,0 +1,40 @@
+{
+    "name": "pipeline5_cgptexcercise_adding",
+    "properties": {
+        "activities": [
+            {
+                "name": "SETVARIABLE_ADDING",
+                "type": "SetVariable",
+                "dependsOn": [],
+                "policy": {
+                    "secureOutput": false,
+                    "secureInput": false
+                },
+                "userProperties": [],
+                "typeProperties": {
+                    "variableName": "C",
+                    "value": {
+                        "value": "@add(variables('A'),variables('B'))",
+                        "type": "Expression"
+                    }
+                }
+            }
+        ],
+        "variables": {
+            "C": {
+                "type": "Integer"
+            },
+            "A": {
+                "type": "Integer",
+                "defaultValue": 50000
+            },
+            "B": {
+                "type": "Integer",
+                "defaultValue": 24000
+            }
+        },
+        "annotations": [],
+        "lastPublishTime": "2026-05-04T11:21:32Z"
+    },
+    "type": "Microsoft.DataFactory/factories/pipelines"
+}

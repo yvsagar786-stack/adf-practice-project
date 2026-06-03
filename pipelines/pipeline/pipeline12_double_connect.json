@@ -1,0 +1,32 @@
+{
+	"name": "pipeline12_double_connect",
+	"properties": {
+		"activities": [
+			{
+				"name": "Set variable12doubleconnection_string",
+				"type": "SetVariable",
+				"dependsOn": [],
+				"policy": {
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "Result",
+					"value": {
+						"value": "@concat('ADF','-','Pipeline','-','Test')",
+						"type": "Expression"
+					}
+				}
+			}
+		],
+		"variables": {
+			"Result": {
+				"type": "String"
+			}
+		},
+		"annotations": [],
+		"lastPublishTime": "2026-05-04T17:48:08Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

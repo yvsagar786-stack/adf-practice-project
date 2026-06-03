@@ -1,0 +1,40 @@
+{
+	"name": "pipeline16_dynamic_exp",
+	"properties": {
+		"activities": [
+			{
+				"name": "Set variable1",
+				"type": "SetVariable",
+				"dependsOn": [],
+				"policy": {
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "Area",
+					"value": {
+						"value": "@string(mul(variables('Breadth'),variables('Length')))",
+						"type": "Expression"
+					}
+				}
+			}
+		],
+		"variables": {
+			"Length": {
+				"type": "Integer",
+				"defaultValue": 10
+			},
+			"Breadth": {
+				"type": "Integer",
+				"defaultValue": 5
+			},
+			"Area": {
+				"type": "String"
+			}
+		},
+		"annotations": [],
+		"lastPublishTime": "2026-05-04T18:22:42Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

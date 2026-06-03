@@ -1,0 +1,40 @@
+{
+	"name": "pipeline8_squareroot_function",
+	"properties": {
+		"activities": [
+			{
+				"name": "Set variable_squareroot_function",
+				"type": "SetVariable",
+				"dependsOn": [],
+				"policy": {
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "C",
+					"value": {
+						"value": "@mul(add(variables('A'),variables('B')),add(variables('A'),variables('B')))",
+						"type": "Expression"
+					}
+				}
+			}
+		],
+		"variables": {
+			"C": {
+				"type": "Integer"
+			},
+			"A": {
+				"type": "Integer",
+				"defaultValue": 10
+			},
+			"B": {
+				"type": "Integer",
+				"defaultValue": 2
+			}
+		},
+		"annotations": [],
+		"lastPublishTime": "2026-05-04T11:46:24Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

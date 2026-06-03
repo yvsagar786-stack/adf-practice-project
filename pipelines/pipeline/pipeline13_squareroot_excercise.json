@@ -1,0 +1,40 @@
+{
+	"name": "pipeline13_squareroot_excercise",
+	"properties": {
+		"activities": [
+			{
+				"name": "Set variable13_SQUAREROOT",
+				"type": "SetVariable",
+				"dependsOn": [],
+				"policy": {
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "C",
+					"value": {
+						"value": "@add(mul(variables('A'),variables('B')),mul(variables('A'),variables('B')))",
+						"type": "Expression"
+					}
+				}
+			}
+		],
+		"variables": {
+			"A": {
+				"type": "Integer",
+				"defaultValue": 5
+			},
+			"B": {
+				"type": "Integer",
+				"defaultValue": 10
+			},
+			"C": {
+				"type": "Integer"
+			}
+		},
+		"annotations": [],
+		"lastPublishTime": "2026-05-04T17:53:48Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

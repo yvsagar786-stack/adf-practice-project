@@ -1,0 +1,32 @@
+{
+	"name": "pipeline_7_string_concate",
+	"properties": {
+		"activities": [
+			{
+				"name": "Set variable_concatenation_fullname",
+				"type": "SetVariable",
+				"dependsOn": [],
+				"policy": {
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "Fullname",
+					"value": {
+						"value": "@concat('Yennam',' ','vikram',' ','sagar')",
+						"type": "Expression"
+					}
+				}
+			}
+		],
+		"variables": {
+			"Fullname": {
+				"type": "String"
+			}
+		},
+		"annotations": [],
+		"lastPublishTime": "2026-05-04T11:33:21Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

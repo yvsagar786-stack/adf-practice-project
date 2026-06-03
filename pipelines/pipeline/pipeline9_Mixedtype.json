@@ -1,0 +1,32 @@
+{
+	"name": "pipeline9_Mixedtype",
+	"properties": {
+		"activities": [
+			{
+				"name": "Set variable_mixed_datatype",
+				"type": "SetVariable",
+				"dependsOn": [],
+				"policy": {
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "Result",
+					"value": {
+						"value": "@concat('Azure',string(10),'Engineer')",
+						"type": "Expression"
+					}
+				}
+			}
+		],
+		"variables": {
+			"Result": {
+				"type": "String"
+			}
+		},
+		"annotations": [],
+		"lastPublishTime": "2026-05-04T12:00:26Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

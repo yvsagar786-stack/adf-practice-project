@@ -1,0 +1,40 @@
+{
+	"name": "pipeline6_multipication",
+	"properties": {
+		"activities": [
+			{
+				"name": "Set variable_multipication",
+				"type": "SetVariable",
+				"dependsOn": [],
+				"policy": {
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "C",
+					"value": {
+						"value": "@mul(variables('A'),variables('B'))",
+						"type": "Expression"
+					}
+				}
+			}
+		],
+		"variables": {
+			"C": {
+				"type": "Integer"
+			},
+			"A": {
+				"type": "Integer",
+				"defaultValue": 2500
+			},
+			"B": {
+				"type": "Integer",
+				"defaultValue": 1500
+			}
+		},
+		"annotations": [],
+		"lastPublishTime": "2026-05-04T11:25:35Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

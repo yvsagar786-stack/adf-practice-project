@@ -1,0 +1,15 @@
+{
+	"name": "adf-practice-vikram",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "08ead890-cae2-49f1-b511-fe1315281cb5",
+		"tenantId": "c56d60e8-4204-4b78-ae43-8b77829ad432"
+	}
+}

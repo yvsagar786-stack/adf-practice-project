@@ -1,0 +1,40 @@
+{
+	"name": "pipeline3_Calculate_Square_of_Sum",
+	"properties": {
+		"activities": [
+			{
+				"name": "Set variable1_Calculate_Square_of_Sum",
+				"type": "SetVariable",
+				"dependsOn": [],
+				"policy": {
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "C",
+					"value": {
+						"value": "@mul(add(variables('A'),variables('B')),add(variables('A'),variables('B')))",
+						"type": "Expression"
+					}
+				}
+			}
+		],
+		"variables": {
+			"A": {
+				"type": "Integer",
+				"defaultValue": 10
+			},
+			"B": {
+				"type": "Integer",
+				"defaultValue": 5
+			},
+			"C": {
+				"type": "Integer"
+			}
+		},
+		"annotations": [],
+		"lastPublishTime": "2026-05-04T08:30:07Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

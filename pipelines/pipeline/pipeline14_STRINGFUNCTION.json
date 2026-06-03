@@ -1,0 +1,32 @@
+{
+	"name": "pipeline14_STRINGFUNCTION",
+	"properties": {
+		"activities": [
+			{
+				"name": "Set variable14_stringfunction",
+				"type": "SetVariable",
+				"dependsOn": [],
+				"policy": {
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "Result",
+					"value": {
+						"value": "@concat('Azure',' ','Data',' ','Engineer')",
+						"type": "Expression"
+					}
+				}
+			}
+		],
+		"variables": {
+			"Result": {
+				"type": "String"
+			}
+		},
+		"annotations": [],
+		"lastPublishTime": "2026-05-04T18:03:10Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

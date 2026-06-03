@@ -1,0 +1,44 @@
+{
+	"name": "pipeline17_wholecube_excercise",
+	"properties": {
+		"activities": [
+			{
+				"name": "Set variable17",
+				"type": "SetVariable",
+				"dependsOn": [],
+				"policy": {
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "Z",
+					"value": {
+						"value": "@mul(sub(variables('X'),mul(variables('P'),variables('Q'))),mul(sub(variables('X'),mul(variables('P'),variables('Q'))),sub(variables('X'),mul(variables('P'),variables('Q')))))",
+						"type": "Expression"
+					}
+				}
+			}
+		],
+		"variables": {
+			"Z": {
+				"type": "Integer"
+			},
+			"X": {
+				"type": "Integer",
+				"defaultValue": 250
+			},
+			"P": {
+				"type": "Integer",
+				"defaultValue": 5
+			},
+			"Q": {
+				"type": "Integer",
+				"defaultValue": 5
+			}
+		},
+		"annotations": [],
+		"lastPublishTime": "2026-05-05T09:29:59Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

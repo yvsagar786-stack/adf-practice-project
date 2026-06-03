@@ -1,0 +1,40 @@
+{
+	"name": "pipeline2_area_calculation",
+	"properties": {
+		"activities": [
+			{
+				"name": "area_calculation",
+				"type": "SetVariable",
+				"dependsOn": [],
+				"policy": {
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "Area",
+					"value": {
+						"value": "@mul(variables('Breadth'),variables('Length'))",
+						"type": "Expression"
+					}
+				}
+			}
+		],
+		"variables": {
+			"Length": {
+				"type": "Integer",
+				"defaultValue": 25
+			},
+			"Breadth": {
+				"type": "Integer",
+				"defaultValue": 15
+			},
+			"Area": {
+				"type": "Integer"
+			}
+		},
+		"annotations": [],
+		"lastPublishTime": "2026-05-04T08:10:02Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

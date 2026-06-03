@@ -1,0 +1,32 @@
+{
+	"name": "pipeline4_Concatination_typecast",
+	"properties": {
+		"activities": [
+			{
+				"name": "Set variable_concatination",
+				"type": "SetVariable",
+				"dependsOn": [],
+				"policy": {
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "Result",
+					"value": {
+						"value": "@concat('Azure',' ','Data',' ','Engineer')",
+						"type": "Expression"
+					}
+				}
+			}
+		],
+		"variables": {
+			"Result": {
+				"type": "String"
+			}
+		},
+		"annotations": [],
+		"lastPublishTime": "2026-05-04T11:14:16Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

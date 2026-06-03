@@ -1,0 +1,40 @@
+{
+	"name": "pipeline10_substraction",
+	"properties": {
+		"activities": [
+			{
+				"name": "Set variable10_SUBSTRACTION",
+				"type": "SetVariable",
+				"dependsOn": [],
+				"policy": {
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "C",
+					"value": {
+						"value": "@sub(variables('A'),variables('B'))",
+						"type": "Expression"
+					}
+				}
+			}
+		],
+		"variables": {
+			"C": {
+				"type": "Integer"
+			},
+			"A": {
+				"type": "Integer",
+				"defaultValue": 25
+			},
+			"B": {
+				"type": "Integer",
+				"defaultValue": 10
+			}
+		},
+		"annotations": [],
+		"lastPublishTime": "2026-05-04T12:03:32Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

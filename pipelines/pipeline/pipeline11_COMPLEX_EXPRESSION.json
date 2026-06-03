@@ -1,0 +1,40 @@
+{
+	"name": "pipeline11_COMPLEX_EXPRESSION",
+	"properties": {
+		"activities": [
+			{
+				"name": "Set variable11_complex",
+				"type": "SetVariable",
+				"dependsOn": [],
+				"policy": {
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "C",
+					"value": {
+						"value": "@add(mul(variables('A'),variables('B')),add(variables('A'),variables('B')))",
+						"type": "Expression"
+					}
+				}
+			}
+		],
+		"variables": {
+			"C": {
+				"type": "Integer"
+			},
+			"A": {
+				"type": "Integer",
+				"defaultValue": 10
+			},
+			"B": {
+				"type": "Integer",
+				"defaultValue": 10
+			}
+		},
+		"annotations": [],
+		"lastPublishTime": "2026-05-04T12:16:12Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

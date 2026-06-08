@@ -30,7 +30,14 @@
 			{
 				"name": "ForEach1",
 				"type": "ForEach",
-				"dependsOn": [],
+				"dependsOn": [
+					{
+						"activity": "Lookup_Controltable",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
 				"userProperties": [],
 				"typeProperties": {
 					"items": {
@@ -39,7 +46,7 @@
 					},
 					"activities": [
 						{
-							"name": "Copy_DynamicFile",
+							"name": "Copy data1",
 							"type": "Copy",
 							"dependsOn": [],
 							"policy": {
@@ -63,15 +70,9 @@
 									}
 								},
 								"sink": {
-									"type": "DelimitedTextSink",
-									"storeSettings": {
-										"type": "AzureBlobStorageWriteSettings"
-									},
-									"formatSettings": {
-										"type": "DelimitedTextWriteSettings",
-										"quoteAllText": true,
-										"fileExtension": ".txt"
-									}
+									"type": "SqlServerSink",
+									"writeBehavior": "insert",
+									"sqlWriterUseTableLock": false
 								},
 								"enableStaging": false,
 								"translator": {
@@ -89,7 +90,7 @@
 									"type": "DatasetReference",
 									"parameters": {
 										"filename": {
-											"value": "@item().filename",
+											"value": "@item().FileName",
 											"type": "Expression"
 										}
 									}
@@ -97,14 +98,8 @@
 							],
 							"outputs": [
 								{
-									"referenceName": "DS_SinkCSV",
-									"type": "DatasetReference",
-									"parameters": {
-										"filename": {
-											"value": "@item().filename",
-											"type": "Expression"
-										}
-									}
+									"referenceName": "SqlServerTable1",
+									"type": "DatasetReference"
 								}
 							]
 						}

@@ -11,10 +11,10 @@
 		"AzureSqlDatabase2_password": {
 			"value": ""
 		},
-		"ls_blob_storage_connectionString": {
+		"SqlServer1_password": {
 			"value": ""
 		},
-		"SqlServer1_password": {
+		"ls_blob_storage_connectionString": {
 			"value": ""
 		},
 		"AzureSqlDatabase1_properties_typeProperties_server": {

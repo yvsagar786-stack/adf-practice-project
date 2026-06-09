@@ -86,14 +86,26 @@
 							},
 							"inputs": [
 								{
-									"referenceName": "DS_SourceCSV",
-									"type": "DatasetReference"
+									"referenceName": "DataSet_Source_blob",
+									"type": "DatasetReference",
+									"parameters": {
+										"filename": {
+											"value": "@item().filename",
+											"type": "Expression"
+										}
+									}
 								}
 							],
 							"outputs": [
 								{
-									"referenceName": "SqlServerTable1",
-									"type": "DatasetReference"
+									"referenceName": "DS_SQLTarget",
+									"type": "DatasetReference",
+									"parameters": {
+										"TableName": {
+											"value": "@item().TableName",
+											"type": "Expression"
+										}
+									}
 								}
 							]
 						}

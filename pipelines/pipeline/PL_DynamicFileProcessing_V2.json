@@ -1,0 +1,11 @@
+{
+	"name": "PL_DynamicFileProcessing_V2",
+	"properties": {
+		"parameters": {
+			"filename": {
+				"type": "string"
+			}
+		},
+		"annotations": []
+	}
+}

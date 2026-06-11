@@ -1,5 +1,5 @@
 {
-	"name": "DS_SourceCSV",
+	"name": "DS_Sink_folder_without_extentions",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "ls_blob_storage",
@@ -7,6 +7,9 @@
 		},
 		"parameters": {
 			"filename": {
+				"type": "string"
+			},
+			"folderpath": {
 				"type": "string"
 			}
 		},
@@ -19,8 +22,11 @@
 					"value": "@dataset().filename",
 					"type": "Expression"
 				},
-				"folderPath": "project_data_11062026",
-				"container": "input-data"
+				"folderPath": {
+					"value": "@dataset().folderpath",
+					"type": "Expression"
+				},
+				"container": "output-data"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",

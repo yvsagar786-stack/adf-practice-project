@@ -19,6 +19,7 @@
 					"value": "@dataset().filename",
 					"type": "Expression"
 				},
+				"folderPath": "project_data_11062026",
 				"container": "input-data"
 			},
 			"columnDelimiter": ",",

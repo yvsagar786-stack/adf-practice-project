@@ -24,6 +24,7 @@
 					],
 					"storeSettings": {
 						"type": "AzureBlobStorageReadSettings",
+						"recursive": true,
 						"enablePartitionDiscovery": false
 					},
 					"formatSettings": {
@@ -96,14 +97,8 @@
 							},
 							"inputs": [
 								{
-									"referenceName": "DS_SourceFolder",
-									"type": "DatasetReference",
-									"parameters": {
-										"filename": {
-											"value": "@item().name",
-											"type": "Expression"
-										}
-									}
+									"referenceName": "DS_Source_Files_12062026",
+									"type": "DatasetReference"
 								}
 							],
 							"outputs": [

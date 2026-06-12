@@ -1,12 +1,15 @@
 {
-	"name": "DS_SourceFolder",
+	"name": "DS_Sink_Dynamic_12062026",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "ls_blob_storage",
 			"type": "LinkedServiceReference"
 		},
 		"parameters": {
-			"filename": {
+			"FolderPath": {
+				"type": "string"
+			},
+			"FileName": {
 				"type": "string"
 			}
 		},
@@ -16,11 +19,14 @@
 			"location": {
 				"type": "AzureBlobStorageLocation",
 				"fileName": {
-					"value": "@dataset().filename",
+					"value": "@dataset().FileName",
 					"type": "Expression"
 				},
-				"folderPath": "project_data_11062026",
-				"container": "input-data"
+				"folderPath": {
+					"value": "@dataset().FolderPath",
+					"type": "Expression"
+				},
+				"container": "output-data"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",

@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Lookup fro getting data",
+				"name": "Lookup_for_data_fetching",
 				"type": "Lookup",
 				"dependsOn": [],
 				"policy": {
@@ -38,7 +38,7 @@
 				"type": "ForEach",
 				"dependsOn": [
 					{
-						"activity": "Lookup fro getting data",
+						"activity": "Lookup_for_data_fetching",
 						"dependencyConditions": [
 							"Succeeded"
 						]
@@ -47,7 +47,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"items": {
-						"value": "@activity('Lookup fro getting data').output.value",
+						"value": "@activity('Lookup_for_data_fetching').output.value",
 						"type": "Expression"
 					},
 					"activities": [
@@ -57,36 +57,46 @@
 							"dependsOn": [],
 							"userProperties": [],
 							"typeProperties": {
-								"variableName": "emp_names",
+								"variableName": "employee_names_array",
 								"value": {
 									"value": "@item().ename",
 									"type": "Expression"
 								}
 							}
-						},
-						{
-							"name": "Set variable1",
-							"type": "SetVariable",
-							"dependsOn": [],
-							"policy": {
-								"secureOutput": false,
-								"secureInput": false
-							},
-							"userProperties": [],
-							"typeProperties": {
-								"variableName": "emp_names_results",
-								"value": "@string(variables('emp_names'))"
-							}
 						}
 					]
+				}
+			},
+			{
+				"name": "Set variable1",
+				"type": "SetVariable",
+				"dependsOn": [
+					{
+						"activity": "ForEach1",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "total_employee_names",
+					"value": {
+						"value": "@string(variables('employee_names_array'))",
+						"type": "Expression"
+					}
 				}
 			}
 		],
 		"variables": {
-			"emp_names": {
+			"employee_names_array": {
 				"type": "Array"
 			},
-			"emp_names_results": {
+			"total_employee_names": {
 				"type": "String"
 			}
 		},

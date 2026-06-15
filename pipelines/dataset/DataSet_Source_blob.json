@@ -5,21 +5,12 @@
 			"referenceName": "ls_blob_storage",
 			"type": "LinkedServiceReference"
 		},
-		"parameters": {
-			"filename": {
-				"type": "string"
-			}
-		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"fileName": {
-					"value": "@dataset().filename",
-					"type": "Expression"
-				},
-				"folderPath": "project_data_11062026",
+				"fileName": "dbo.employee2.txt",
 				"container": "input-data"
 			},
 			"columnDelimiter": ",",

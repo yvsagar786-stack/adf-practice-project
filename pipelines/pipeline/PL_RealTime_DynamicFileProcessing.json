@@ -98,7 +98,13 @@
 							"inputs": [
 								{
 									"referenceName": "DS_Source_Files_12062026",
-									"type": "DatasetReference"
+									"type": "DatasetReference",
+									"parameters": {
+										"filename": {
+											"value": "@item()",
+											"type": "Expression"
+										}
+									}
 								}
 							],
 							"outputs": [

@@ -23,7 +23,8 @@
 					"dataset": {
 						"referenceName": "DS_Source_19062026_DBO_Practice",
 						"type": "DatasetReference"
-					}
+					},
+					"firstRowOnly": false
 				}
 			}
 		],

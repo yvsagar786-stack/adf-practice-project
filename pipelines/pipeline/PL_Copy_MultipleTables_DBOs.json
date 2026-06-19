@@ -17,6 +17,7 @@
 				"typeProperties": {
 					"source": {
 						"type": "SqlServerSource",
+						"sqlReaderQuery": "SELECT\n    SchemaName,\n    TableName,\n    ContainerName\nFROM dbo.ControlTable3",
 						"queryTimeout": "02:00:00",
 						"partitionOption": "None"
 					},

@@ -91,7 +91,7 @@
 									"type": "DatasetReference",
 									"parameters": {
 										"SchemaName": {
-											"value": "@item()",
+											"value": "@item().SourceQuery",
 											"type": "Expression"
 										},
 										"TableName": {

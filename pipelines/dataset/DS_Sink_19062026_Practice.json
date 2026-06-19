@@ -25,7 +25,14 @@
 					"value": "@dataset().FileName",
 					"type": "Expression"
 				},
-				"container": "output-data"
+				"folderPath": {
+					"value": "@dataset().FolderName",
+					"type": "Expression"
+				},
+				"container": {
+					"value": "@dataset().ContainerName",
+					"type": "Expression"
+				}
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",

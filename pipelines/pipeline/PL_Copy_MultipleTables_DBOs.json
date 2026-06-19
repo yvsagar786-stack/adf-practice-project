@@ -103,7 +103,21 @@
 							"outputs": [
 								{
 									"referenceName": "DS_Sink_19062026_Practice",
-									"type": "DatasetReference"
+									"type": "DatasetReference",
+									"parameters": {
+										"ContainerName": {
+											"value": "@item()",
+											"type": "Expression"
+										},
+										"FolderName": {
+											"value": "@item()",
+											"type": "Expression"
+										},
+										"FileName": {
+											"value": "@item()",
+											"type": "Expression"
+										}
+									}
 								}
 							]
 						}

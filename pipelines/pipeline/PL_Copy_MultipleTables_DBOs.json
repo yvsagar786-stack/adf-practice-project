@@ -31,14 +31,9 @@
 			{
 				"name": "ForEach1_for_iterating_purpose",
 				"type": "ForEach",
-				"dependsOn": [
-					{
-						"activity": "Lookup1_fetching_controltable",
-						"dependencyConditions": [
-							"Succeeded"
-						]
-					}
-				],
+				"state": "Inactive",
+				"onInactiveMarkAs": "Succeeded",
+				"dependsOn": [],
 				"userProperties": [],
 				"typeProperties": {
 					"items": {

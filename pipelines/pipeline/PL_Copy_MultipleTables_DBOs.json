@@ -106,15 +106,7 @@
 									"type": "DatasetReference",
 									"parameters": {
 										"ContainerName": {
-											"value": "@item()",
-											"type": "Expression"
-										},
-										"FolderName": {
-											"value": "@item()",
-											"type": "Expression"
-										},
-										"FileName": {
-											"value": "@item()",
+											"value": "@item().ContainerName",
 											"type": "Expression"
 										}
 									}

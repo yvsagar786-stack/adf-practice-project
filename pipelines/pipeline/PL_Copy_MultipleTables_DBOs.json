@@ -108,6 +108,14 @@
 										"ContainerName": {
 											"value": "@item().ContainerName",
 											"type": "Expression"
+										},
+										"FolderName": {
+											"value": "@item().FolderName",
+											"type": "Expression"
+										},
+										"FileName": {
+											"value": "@item().FileName",
+											"type": "Expression"
 										}
 									}
 								}

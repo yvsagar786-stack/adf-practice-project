@@ -114,7 +114,7 @@
 											"type": "Expression"
 										},
 										"FileName": {
-											"value": "@item().FileName",
+											"value": "@concat(item().TableName,'.csv')",
 											"type": "Expression"
 										}
 									}

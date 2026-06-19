@@ -110,7 +110,7 @@
 											"type": "Expression"
 										},
 										"FolderName": {
-											"value": "@item().FolderName",
+											"value": "@item().SchemaName",
 											"type": "Expression"
 										},
 										"FileName": {

@@ -61,6 +61,7 @@
 							"typeProperties": {
 								"source": {
 									"type": "SqlServerSource",
+									"sqlReaderQuery": "@if(\nempty(item().SourceQuery),\nconcat(\n'SELECT * FROM ',\nitem().SchemaName,\n'.',\nitem().TableName\n),\nitem().SourceQuery\n)",
 									"queryTimeout": "02:00:00",
 									"partitionOption": "None"
 								},
@@ -95,7 +96,7 @@
 											"type": "Expression"
 										},
 										"TableName": {
-											"value": "@item()",
+											"value": "@item().SourceQuery",
 											"type": "Expression"
 										}
 									}

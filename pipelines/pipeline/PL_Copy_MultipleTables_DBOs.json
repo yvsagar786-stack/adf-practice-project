@@ -68,7 +68,17 @@
 							"inputs": [
 								{
 									"referenceName": "DS_Source_19062026_DBO_Practice",
-									"type": "DatasetReference"
+									"type": "DatasetReference",
+									"parameters": {
+										"SchemaName": {
+											"value": "@item()",
+											"type": "Expression"
+										},
+										"TableName": {
+											"value": "@item()",
+											"type": "Expression"
+										}
+									}
 								}
 							]
 						}

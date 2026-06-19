@@ -109,10 +109,7 @@
 											"value": "@item().ContainerName",
 											"type": "Expression"
 										},
-										"FolderName": {
-											"value": "@item().SchemaName",
-											"type": "Expression"
-										},
+										"FolderName": "@concat( formatDateTime(utcNow(),'yyyy/MM/dd'), '/', item().SchemaName )",
 										"FileName": {
 											"value": "@concat(item().TableName,'.csv')",
 											"type": "Expression"

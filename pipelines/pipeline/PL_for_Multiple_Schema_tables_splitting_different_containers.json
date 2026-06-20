@@ -21,7 +21,7 @@
 						"partitionOption": "None"
 					},
 					"dataset": {
-						"referenceName": "DS_Source_19062026_DBO_Practice",
+						"referenceName": "DS_SOURCE_CONTROLTABLE_3_20062026",
 						"type": "DatasetReference"
 					},
 					"firstRowOnly": false

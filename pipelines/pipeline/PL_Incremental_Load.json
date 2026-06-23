@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Lookup1",
+				"name": "Lookup1_watermark",
 				"type": "Lookup",
 				"dependsOn": [],
 				"policy": {
@@ -26,6 +26,19 @@
 						"type": "DatasetReference"
 					}
 				}
+			},
+			{
+				"name": "Lookup2_maxdate",
+				"type": "Lookup",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": []
 			}
 		],
 		"annotations": []

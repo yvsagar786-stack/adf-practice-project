@@ -148,7 +148,11 @@
 				"typeProperties": {
 					"scripts": [
 						{
-							"type": "Query"
+							"type": "Query",
+							"text": {
+								"value": "@concat(\n'UPDATE dbo.WatermarkTable SET WatermarkDate = ''',\nactivity('Lookup2_maxdate').output.firstRow.MaxModifiedDate,\n''' WHERE TableName = ''EmployeeMaster'''\n)",
+								"type": "Expression"
+							}
 						}
 					],
 					"scriptBlockExecutionTimeout": "02:00:00"

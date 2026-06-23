@@ -115,7 +115,10 @@
 				"outputs": [
 					{
 						"referenceName": "DS_BLOB_EMPMASTER_23062026",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"FileName": "EmployeeMaster.csv"
+						}
 					}
 				]
 			}

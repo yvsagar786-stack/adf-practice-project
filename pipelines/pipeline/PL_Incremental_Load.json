@@ -79,8 +79,19 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
+					"source": {
+						"type": "SqlServerSource",
+						"queryTimeout": "02:00:00",
+						"partitionOption": "None"
+					},
 					"enableStaging": false
-				}
+				},
+				"inputs": [
+					{
+						"referenceName": "DS_SOURCE_SQL_23062026",
+						"type": "DatasetReference"
+					}
+				]
 			}
 		],
 		"annotations": []

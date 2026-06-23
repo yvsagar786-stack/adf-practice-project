@@ -38,7 +38,18 @@
 					"secureOutput": false,
 					"secureInput": false
 				},
-				"userProperties": []
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "SqlServerSource",
+						"queryTimeout": "02:00:00",
+						"partitionOption": "None"
+					},
+					"dataset": {
+						"referenceName": "DS_SOURCE_SQL_23062026",
+						"type": "DatasetReference"
+					}
+				}
 			}
 		],
 		"annotations": []

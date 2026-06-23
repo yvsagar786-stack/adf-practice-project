@@ -117,7 +117,11 @@
 						"referenceName": "DS_BLOB_EMPMASTER_23062026",
 						"type": "DatasetReference",
 						"parameters": {
-							"FileName": "EmployeeMaster.csv"
+							"FileName": "EmployeeMaster.csv",
+							"FolderPath": {
+								"value": "@concat(\nformatDateTime(utcNow(),'yyyy'),\n'/',\nformatDateTime(utcNow(),'MM'),\n'/',\nformatDateTime(utcNow(),'dd')\n)",
+								"type": "Expression"
+							}
 						}
 					}
 				]

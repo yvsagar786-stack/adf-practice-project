@@ -8,6 +8,9 @@
 		"parameters": {
 			"FileName": {
 				"type": "string"
+			},
+			"FolderPath": {
+				"type": "string"
 			}
 		},
 		"annotations": [],
@@ -17,6 +20,10 @@
 				"type": "AzureBlobStorageLocation",
 				"fileName": {
 					"value": "@dataset().FileName",
+					"type": "Expression"
+				},
+				"folderPath": {
+					"value": "@dataset().FolderPath",
 					"type": "Expression"
 				},
 				"container": "incremental-demo"

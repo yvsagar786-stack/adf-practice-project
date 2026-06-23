@@ -81,6 +81,7 @@
 				"typeProperties": {
 					"source": {
 						"type": "SqlServerSource",
+						"sqlReaderQuery": "SELECT *\nFROM demo.EmployeeMaster\nWHERE ModifiedDate > '2026-06-02'\nAND ModifiedDate <= '2026-06-05'",
 						"queryTimeout": "02:00:00",
 						"partitionOption": "None"
 					},

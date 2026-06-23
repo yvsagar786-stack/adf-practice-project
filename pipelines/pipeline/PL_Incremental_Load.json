@@ -81,7 +81,7 @@
 				"typeProperties": {
 					"source": {
 						"type": "SqlServerSource",
-						"sqlReaderQuery": "SELECT *\nFROM demo.EmployeeMaster\nWHERE ModifiedDate > '2026-06-02'\nAND ModifiedDate <= '2026-06-05'",
+						"sqlReaderQuery": "@concat(\n'SELECT * FROM demo.EmployeeMaster WHERE ModifiedDate > ''',\nactivity('Lookup1_watermark').output.firstRow.WatermarkDate,\n''' AND ModifiedDate <= ''',\nactivity('Lookup2_maxdate').output.firstRow.MaxModifiedDate,\n''''\n)",
 						"queryTimeout": "02:00:00",
 						"partitionOption": "None"
 					},

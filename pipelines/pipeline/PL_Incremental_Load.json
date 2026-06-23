@@ -42,6 +42,7 @@
 				"typeProperties": {
 					"source": {
 						"type": "SqlServerSource",
+						"sqlReaderQuery": "SELECT MAX(ModifiedDate) AS MaxModifiedDate\nFROM demo.EmployeeMaster",
 						"queryTimeout": "02:00:00",
 						"partitionOption": "None"
 					},

@@ -23,7 +23,7 @@
 					"type": "Expression"
 				},
 				"folderPath": {
-					"value": "@concat(\nformatDateTime(utcNow(),'yyyy'),\n'/',\nformatDateTime(utcNow(),'MM'),\n'/',\nformatDateTime(utcNow(),'dd')\n)",
+					"value": "@dataset().FolderPath",
 					"type": "Expression"
 				},
 				"container": "incremental-demo"

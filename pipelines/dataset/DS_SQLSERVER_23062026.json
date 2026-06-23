@@ -41,7 +41,10 @@
 		],
 		"typeProperties": {
 			"schema": "demo",
-			"table": "EmployeeMaster"
+			"table": {
+				"value": "@dataset().TableName",
+				"type": "Expression"
+			}
 		}
 	}
 }

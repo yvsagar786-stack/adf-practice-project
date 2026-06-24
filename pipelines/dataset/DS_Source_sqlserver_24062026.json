@@ -5,6 +5,11 @@
 			"referenceName": "SqlServer1",
 			"type": "LinkedServiceReference"
 		},
+		"parameters": {
+			"Tablename": {
+				"type": "string"
+			}
+		},
 		"annotations": [],
 		"type": "SqlServerTable",
 		"schema": [

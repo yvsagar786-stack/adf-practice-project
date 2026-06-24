@@ -1,0 +1,12 @@
+{
+	"name": "DS_Source_copyactivity_sqlserver24062026",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SqlServer1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": []
+	}
+}

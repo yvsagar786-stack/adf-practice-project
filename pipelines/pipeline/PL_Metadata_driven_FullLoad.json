@@ -62,8 +62,19 @@
 							},
 							"userProperties": [],
 							"typeProperties": {
+								"source": {
+									"type": "SqlServerSource",
+									"queryTimeout": "02:00:00",
+									"partitionOption": "None"
+								},
 								"enableStaging": false
-							}
+							},
+							"inputs": [
+								{
+									"referenceName": "DS_Source_copyactivity_sqlserver24062026",
+									"type": "DatasetReference"
+								}
+							]
 						}
 					]
 				}

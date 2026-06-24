@@ -23,7 +23,10 @@
 					},
 					"dataset": {
 						"referenceName": "DS_Source_sqlserver_24062026",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"Tablename": "dbo.ControlTable_Metadata"
+						}
 					},
 					"firstRowOnly": false
 				}

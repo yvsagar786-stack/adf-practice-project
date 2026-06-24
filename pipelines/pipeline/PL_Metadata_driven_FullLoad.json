@@ -72,7 +72,13 @@
 							"inputs": [
 								{
 									"referenceName": "DS_Source_copyactivity_sqlserver24062026",
-									"type": "DatasetReference"
+									"type": "DatasetReference",
+									"parameters": {
+										"tablename": {
+											"value": "@item().tablename",
+											"type": "Expression"
+										}
+									}
 								}
 							]
 						}

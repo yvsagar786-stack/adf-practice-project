@@ -17,16 +17,23 @@
 				"typeProperties": {
 					"source": {
 						"type": "SqlServerSource",
+						"sqlReaderQuery": "SELECT *\nFROM dbo.ControlTable_Metadata",
 						"queryTimeout": "02:00:00",
 						"partitionOption": "None"
 					},
 					"dataset": {
 						"referenceName": "DS_Source_sqlserver_24062026",
 						"type": "DatasetReference"
-					}
+					},
+					"firstRowOnly": false
 				}
 			}
 		],
+		"parameters": {
+			"Tablename": {
+				"type": "string"
+			}
+		},
 		"annotations": []
 	}
 }

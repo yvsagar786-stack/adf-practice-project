@@ -64,6 +64,7 @@
 							"typeProperties": {
 								"source": {
 									"type": "SqlServerSource",
+									"sqlReaderQuery": "@concat(\nitem().SchemaName,\n'.',\nitem().TableName\n)",
 									"queryTimeout": "02:00:00",
 									"partitionOption": "None"
 								},

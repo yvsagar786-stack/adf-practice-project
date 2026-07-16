@@ -134,6 +134,10 @@
 					"storedProcedureName": "[dbo].[usp_EndLog]",
 					"storedProcedureParameters": {
 						"LoginID": {
+							"value": "@variables('v_LogID')",
+							"type": "Int32"
+						},
+						"undefined": {
 							"value": ""
 						}
 					}

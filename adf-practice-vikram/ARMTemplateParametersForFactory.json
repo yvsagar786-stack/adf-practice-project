@@ -4,45 +4,6 @@
 	"parameters": {
 		"factoryName": {
 			"value": "adf-practice-vikram"
-		},
-		"AzureSqlDatabase1_password": {
-			"value": ""
-		},
-		"AzureSqlDatabase2_password": {
-			"value": ""
-		},
-		"SqlServer1_password": {
-			"value": ""
-		},
-		"ls_blob_storage_connectionString": {
-			"value": ""
-		},
-		"AzureSqlDatabase1_properties_typeProperties_server": {
-			"value": "vikramsqldatabaseserver.database.windows.net"
-		},
-		"AzureSqlDatabase1_properties_typeProperties_database": {
-			"value": "free-sql-db-3249694"
-		},
-		"AzureSqlDatabase1_properties_typeProperties_userName": {
-			"value": "sqladmin"
-		},
-		"AzureSqlDatabase2_properties_typeProperties_server": {
-			"value": "vikramsqldatabaseserver.database.windows.net"
-		},
-		"AzureSqlDatabase2_properties_typeProperties_database": {
-			"value": "free-sql-db-3249694"
-		},
-		"AzureSqlDatabase2_properties_typeProperties_userName": {
-			"value": "sqladmin"
-		},
-		"SqlServer1_properties_typeProperties_server": {
-			"value": "HP"
-		},
-		"SqlServer1_properties_typeProperties_database": {
-			"value": "ADFPracticeDB"
-		},
-		"SqlServer1_properties_typeProperties_userName": {
-			"value": "adfuser"
 		}
 	}
 }

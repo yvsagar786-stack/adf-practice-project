@@ -46,7 +46,10 @@
 				"userProperties": [],
 				"typeProperties": {
 					"variableName": "v_LogID",
-					"value": ""
+					"value": {
+						"value": "@activity('LK_StartLog').output.value[0].LOGID",
+						"type": "Expression"
+					}
 				}
 			}
 		],

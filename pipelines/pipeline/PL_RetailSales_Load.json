@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Lookup1",
+				"name": "LK_StartLog",
 				"type": "Lookup",
 				"dependsOn": [],
 				"policy": {
@@ -13,7 +13,20 @@
 					"secureOutput": false,
 					"secureInput": false
 				},
-				"userProperties": []
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "SqlServerSource",
+						"sqlReaderQuery": "EXEC dbo.usp_StartLog\n    @PipelineName = 'PL_RetailSales_Load',\n    @RunID = 'ADF_TEST_RUN';",
+						"queryTimeout": "02:00:00",
+						"partitionOption": "None"
+					},
+					"dataset": {
+						"referenceName": "sql_server_pl_retailsales_load",
+						"type": "DatasetReference"
+					},
+					"firstRowOnly": false
+				}
 			}
 		],
 		"variables": {

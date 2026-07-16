@@ -141,7 +141,14 @@
 							"value": "Success"
 						},
 						"RowsRead": {
+							"value": {
+								"value": "@activity('Copy data1').output.rowsRead\n\n",
+								"type": "Expression"
+							},
 							"type": "Int64"
+						},
+						"undefined": {
+							"value": ""
 						}
 					}
 				},

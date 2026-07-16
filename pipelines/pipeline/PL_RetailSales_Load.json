@@ -137,7 +137,10 @@
 							"value": "@variables('v_LogID')",
 							"type": "Int32"
 						},
-						"undefined": {
+						"Status": {
+							"value": "Success"
+						},
+						"RowsRead": {
 							"value": ""
 						}
 					}

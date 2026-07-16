@@ -141,7 +141,7 @@
 							"value": "Success"
 						},
 						"RowsRead": {
-							"value": ""
+							"type": "Int64"
 						}
 					}
 				},

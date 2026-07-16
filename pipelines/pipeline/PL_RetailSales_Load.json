@@ -1,6 +1,11 @@
 {
 	"name": "PL_RetailSales_Load",
 	"properties": {
+		"variables": {
+			"v_LogID": {
+				"type": "Integer"
+			}
+		},
 		"annotations": []
 	}
 }

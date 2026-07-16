@@ -148,8 +148,14 @@
 							"type": "Int64"
 						},
 						"RowsCopied": {
-							"value": "",
+							"value": {
+								"value": "@activity('Copy data1').output.rowsCopied\n",
+								"type": "Expression"
+							},
 							"type": "Int64"
+						},
+						"undefined": {
+							"value": ""
 						}
 					}
 				},

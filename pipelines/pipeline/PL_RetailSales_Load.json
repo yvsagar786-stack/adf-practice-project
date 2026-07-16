@@ -133,7 +133,7 @@
 				"typeProperties": {
 					"storedProcedureName": "[dbo].[usp_EndLog]",
 					"storedProcedureParameters": {
-						"LoginID": {
+						"LogID": {
 							"value": "@variables('v_LogID')",
 							"type": "Int32"
 						},

@@ -154,8 +154,13 @@
 							},
 							"type": "Int64"
 						},
-						"undefined": {
-							"value": ""
+						"ErrorCode": {
+							"value": "",
+							"type": "String"
+						},
+						"ErrorMessage": {
+							"value": "",
+							"type": "String"
 						}
 					}
 				},

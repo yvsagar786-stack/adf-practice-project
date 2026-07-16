@@ -147,7 +147,7 @@
 							},
 							"type": "Int64"
 						},
-						"undefined": {
+						"RowsCopied": {
 							"value": ""
 						}
 					}

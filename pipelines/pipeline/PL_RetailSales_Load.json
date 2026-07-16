@@ -130,6 +130,9 @@
 					"secureInput": false
 				},
 				"userProperties": [],
+				"typeProperties": {
+					"storedProcedureName": "[dbo].[usp_EndLog]"
+				},
 				"linkedServiceName": {
 					"referenceName": "SqlServer1",
 					"type": "LinkedServiceReference"

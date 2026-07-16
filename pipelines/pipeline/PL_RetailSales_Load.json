@@ -131,7 +131,12 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"storedProcedureName": "[dbo].[usp_EndLog]"
+					"storedProcedureName": "[dbo].[usp_EndLog]",
+					"storedProcedureParameters": {
+						"undefined": {
+							"value": ""
+						}
+					}
 				},
 				"linkedServiceName": {
 					"referenceName": "SqlServer1",

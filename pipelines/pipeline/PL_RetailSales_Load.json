@@ -138,7 +138,8 @@
 							"type": "Int32"
 						},
 						"Status": {
-							"value": "Success"
+							"value": "Success",
+							"type": "String"
 						},
 						"RowsRead": {
 							"value": {

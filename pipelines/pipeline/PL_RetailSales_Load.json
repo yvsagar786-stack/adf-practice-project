@@ -148,7 +148,8 @@
 							"type": "Int64"
 						},
 						"RowsCopied": {
-							"value": ""
+							"value": "",
+							"type": "Int64"
 						}
 					}
 				},

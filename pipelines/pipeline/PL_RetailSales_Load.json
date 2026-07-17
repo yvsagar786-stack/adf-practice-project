@@ -55,14 +55,7 @@
 			{
 				"name": "Copy data1",
 				"type": "Copy",
-				"dependsOn": [
-					{
-						"activity": "Set variable1",
-						"dependencyConditions": [
-							"Succeeded"
-						]
-					}
-				],
+				"dependsOn": [],
 				"policy": {
 					"timeout": "0.12:00:00",
 					"retry": 0,
@@ -134,7 +127,10 @@
 					"storedProcedureName": "[dbo].[usp_EndLog]",
 					"storedProcedureParameters": {
 						"LogID": {
-							"value": "@variables('v_LogID')",
+							"value": {
+								"value": "@variables('v_LogID')",
+								"type": "Expression"
+							},
 							"type": "Int32"
 						},
 						"Status": {
@@ -169,6 +165,26 @@
 					"referenceName": "SqlServer1",
 					"type": "LinkedServiceReference"
 				}
+			},
+			{
+				"name": "Lookup2-watermark",
+				"type": "Lookup",
+				"dependsOn": [
+					{
+						"activity": "Set variable1",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": []
 			}
 		],
 		"variables": {

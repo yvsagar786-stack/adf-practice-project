@@ -57,7 +57,7 @@
 				"type": "Copy",
 				"dependsOn": [
 					{
-						"activity": "Lookup2-watermark",
+						"activity": "LK_ReadWatermark",
 						"dependencyConditions": [
 							"Succeeded"
 						]
@@ -174,7 +174,7 @@
 				}
 			},
 			{
-				"name": "Lookup2-watermark",
+				"name": "LK_ReadWatermark",
 				"type": "Lookup",
 				"dependsOn": [
 					{

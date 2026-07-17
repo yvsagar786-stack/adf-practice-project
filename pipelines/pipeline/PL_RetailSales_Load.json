@@ -112,7 +112,7 @@
 				]
 			},
 			{
-				"name": "Stored procedure1",
+				"name": "SP_EndLog",
 				"type": "SqlServerStoredProcedure",
 				"dependsOn": [
 					{

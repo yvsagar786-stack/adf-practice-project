@@ -200,7 +200,7 @@
 						"partitionOption": "None"
 					},
 					"dataset": {
-						"referenceName": "SqlServer_copyactivity_retail_salesorders",
+						"referenceName": "sql_server_pl_retailsales_load",
 						"type": "DatasetReference"
 					},
 					"firstRowOnly": false

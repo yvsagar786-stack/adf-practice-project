@@ -1,0 +1,50 @@
+{
+	"name": "DS_LKP_SQL_METADATA_DRIVENCOPY_21072026",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SqlServer1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "ID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "SchemaName",
+				"type": "nvarchar"
+			},
+			{
+				"name": "TableName",
+				"type": "nvarchar"
+			},
+			{
+				"name": "SourceQuery",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ContainerName",
+				"type": "nvarchar"
+			},
+			{
+				"name": "FolderName",
+				"type": "nvarchar"
+			},
+			{
+				"name": "FileName",
+				"type": "nvarchar"
+			},
+			{
+				"name": "IsActive",
+				"type": "bit"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "ADF_ControlTable_Metadata"
+		}
+	}
+}

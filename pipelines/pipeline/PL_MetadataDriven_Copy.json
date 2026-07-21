@@ -17,7 +17,6 @@
 				"typeProperties": {
 					"source": {
 						"type": "SqlServerSource",
-						"sqlReaderQuery": "Select * from ADF_ControlTable_Metadata\nwhere IsActive = 1;",
 						"queryTimeout": "02:00:00",
 						"partitionOption": "None"
 					},

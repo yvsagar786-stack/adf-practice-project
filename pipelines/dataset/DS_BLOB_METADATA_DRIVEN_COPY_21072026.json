@@ -20,7 +20,8 @@
 		"type": "DelimitedText",
 		"typeProperties": {
 			"location": {
-				"type": "AzureBlobStorageLocation"
+				"type": "AzureBlobStorageLocation",
+				"container": "input-data"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",

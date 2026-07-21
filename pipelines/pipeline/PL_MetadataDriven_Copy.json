@@ -27,6 +27,25 @@
 					},
 					"firstRowOnly": false
 				}
+			},
+			{
+				"name": "FE_Process_Tables",
+				"type": "ForEach",
+				"dependsOn": [
+					{
+						"activity": "LK_Read_Metadata",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"userProperties": [],
+				"typeProperties": {
+					"items": {
+						"value": "@activity('LK_Read_Metadata').output.value",
+						"type": "Expression"
+					}
+				}
 			}
 		],
 		"annotations": []

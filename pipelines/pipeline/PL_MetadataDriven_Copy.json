@@ -21,7 +21,7 @@
 						"partitionOption": "None"
 					},
 					"dataset": {
-						"referenceName": "DS_SQL_PL_METADATADRIVEN_COPY_21072026",
+						"referenceName": "DS_LKP_SQL_METADATA_DRIVENCOPY_21072026",
 						"type": "DatasetReference"
 					},
 					"firstRowOnly": false

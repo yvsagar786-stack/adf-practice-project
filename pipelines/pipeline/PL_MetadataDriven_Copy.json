@@ -69,7 +69,17 @@
 							"inputs": [
 								{
 									"referenceName": "DS_SQL_PL_METADATADRIVEN_COPY_21072026",
-									"type": "DatasetReference"
+									"type": "DatasetReference",
+									"parameters": {
+										"SchemaName": {
+											"value": "@item().SchemaName",
+											"type": "Expression"
+										},
+										"TableName": {
+											"value": "@item().TableName",
+											"type": "Expression"
+										}
+									}
 								}
 							]
 						}

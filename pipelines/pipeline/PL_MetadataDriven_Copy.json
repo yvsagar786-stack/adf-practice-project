@@ -23,14 +23,7 @@
 					},
 					"dataset": {
 						"referenceName": "DS_SQL_PL_METADATADRIVEN_COPY_21072026",
-						"type": "DatasetReference",
-						"parameters": {
-							"SchemaName": "@item",
-							"TableName": {
-								"value": "@item",
-								"type": "Expression"
-							}
-						}
+						"type": "DatasetReference"
 					},
 					"firstRowOnly": false
 				}

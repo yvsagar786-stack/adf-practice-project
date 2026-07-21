@@ -23,7 +23,11 @@
 					},
 					"dataset": {
 						"referenceName": "DS_SQL_PL_METADATADRIVEN_COPY_21072026",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"SchemaName": "@item",
+							"TableName": "@it"
+						}
 					},
 					"firstRowOnly": false
 				}

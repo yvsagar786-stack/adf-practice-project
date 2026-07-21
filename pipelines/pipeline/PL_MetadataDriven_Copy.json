@@ -26,7 +26,10 @@
 						"type": "DatasetReference",
 						"parameters": {
 							"SchemaName": "@item",
-							"TableName": "@it"
+							"TableName": {
+								"value": "@item",
+								"type": "Expression"
+							}
 						}
 					},
 					"firstRowOnly": false

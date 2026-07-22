@@ -123,19 +123,8 @@
 							},
 							"userProperties": [],
 							"typeProperties": {
-								"source": {
-									"type": "SqlServerSource",
-									"queryTimeout": "02:00:00",
-									"partitionOption": "None"
-								},
 								"enableStaging": false
-							},
-							"inputs": [
-								{
-									"referenceName": "DS_SRC_ENTERPRICE_ETL_220726",
-									"type": "DatasetReference"
-								}
-							]
+							}
 						}
 					]
 				}

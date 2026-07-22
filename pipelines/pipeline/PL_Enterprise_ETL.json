@@ -163,6 +163,10 @@
 										"ContainerName": {
 											"value": "@item().ContainerName",
 											"type": "Expression"
+										},
+										"FolderName": {
+											"value": "@item().SchemaName",
+											"type": "Expression"
 										}
 									}
 								}

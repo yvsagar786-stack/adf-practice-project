@@ -1,0 +1,12 @@
+{
+	"name": "DS_SQL_PL_Enterprise_ETL_22072026",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SqlServer1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": []
+	}
+}

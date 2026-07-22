@@ -158,7 +158,13 @@
 							"outputs": [
 								{
 									"referenceName": "DS_BLOB_ERP_CSV",
-									"type": "DatasetReference"
+									"type": "DatasetReference",
+									"parameters": {
+										"ContainerName": {
+											"value": "@item().ContainerName",
+											"type": "Expression"
+										}
+									}
 								}
 							]
 						}

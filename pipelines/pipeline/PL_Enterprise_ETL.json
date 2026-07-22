@@ -1,33 +1,6 @@
 {
 	"name": "PL_Enterprise_ETL",
 	"properties": {
-		"activities": [
-			{
-				"name": "Lkp_for_Controltable_Reading",
-				"type": "Lookup",
-				"dependsOn": [],
-				"policy": {
-					"timeout": "0.12:00:00",
-					"retry": 0,
-					"retryIntervalInSeconds": 30,
-					"secureOutput": false,
-					"secureInput": false
-				},
-				"userProperties": [],
-				"typeProperties": {
-					"source": {
-						"type": "SqlServerSource",
-						"queryTimeout": "02:00:00",
-						"partitionOption": "None"
-					},
-					"dataset": {
-						"referenceName": "DS_SQL_PL_Enterprise_ETL_22072026",
-						"type": "DatasetReference"
-					},
-					"firstRowOnly": false
-				}
-			}
-		],
 		"annotations": []
 	}
 }

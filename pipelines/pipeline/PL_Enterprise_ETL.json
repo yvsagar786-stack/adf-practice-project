@@ -2,7 +2,10 @@
 	"name": "PL_Enterprise_ETL",
 	"properties": {
 		"parameters": {
-			"S": {
+			"SchemaName": {
+				"type": "string"
+			},
+			"TableName": {
 				"type": "string"
 			}
 		},

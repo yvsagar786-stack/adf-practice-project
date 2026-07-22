@@ -169,7 +169,7 @@
 											"type": "Expression"
 										},
 										"FileName": {
-											"value": "\nconcat(item().TableName,'.csv')",
+											"value": "\n@concat(item().TableName,'.csv')",
 											"type": "Expression"
 										}
 									}

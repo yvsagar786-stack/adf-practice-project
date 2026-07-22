@@ -167,6 +167,10 @@
 										"FolderName": {
 											"value": "@item().SchemaName",
 											"type": "Expression"
+										},
+										"FileName": {
+											"value": "\nconcat(item().TableName,'.csv')",
+											"type": "Expression"
 										}
 									}
 								}

@@ -48,7 +48,14 @@
 						{
 							"name": "Stored procedure1",
 							"type": "SqlServerStoredProcedure",
-							"dependsOn": [],
+							"dependsOn": [
+								{
+									"activity": "Set_RunID",
+									"dependencyConditions": [
+										"Succeeded"
+									]
+								}
+							],
 							"policy": {
 								"timeout": "0.12:00:00",
 								"retry": 0,
@@ -66,7 +73,7 @@
 							}
 						},
 						{
-							"name": "Set variable1",
+							"name": "Set_RunID",
 							"type": "SetVariable",
 							"dependsOn": [],
 							"policy": {
@@ -76,7 +83,10 @@
 							"userProperties": [],
 							"typeProperties": {
 								"variableName": "RunID",
-								"value": "@guid"
+								"value": {
+									"value": "@guid()",
+									"type": "Expression"
+								}
 							}
 						}
 					]

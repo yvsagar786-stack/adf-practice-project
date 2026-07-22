@@ -152,7 +152,17 @@
 							"inputs": [
 								{
 									"referenceName": "DS_ERP_ETL_SOURCE_SQL",
-									"type": "DatasetReference"
+									"type": "DatasetReference",
+									"parameters": {
+										"SchemaName": {
+											"value": "@item().SchemaName",
+											"type": "Expression"
+										},
+										"TableName": {
+											"value": "@item().TableName",
+											"type": "Expression"
+										}
+									}
 								}
 							],
 							"outputs": [

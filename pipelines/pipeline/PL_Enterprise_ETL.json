@@ -68,7 +68,7 @@
 								"storedProcedureName": "[dbo].[usp_InsertAudit]",
 								"storedProcedureParameters": {
 									"PipelineName": {
-										"value": "",
+										"value": "@pipeline().Pipeline",
 										"type": "String"
 									},
 									"RunID": {
@@ -76,7 +76,7 @@
 										"type": "Guid"
 									},
 									"TableName": {
-										"value": "",
+										"value": "@item().TableName",
 										"type": "String"
 									}
 								}

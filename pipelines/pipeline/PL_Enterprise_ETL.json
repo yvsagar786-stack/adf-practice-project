@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "L",
+				"name": "Lkp_for_Controltable_Reading",
 				"type": "Lookup",
 				"dependsOn": [],
 				"policy": {

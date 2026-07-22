@@ -1,6 +1,11 @@
 {
 	"name": "PL_Enterprise_ETL",
 	"properties": {
+		"parameters": {
+			"S": {
+				"type": "string"
+			}
+		},
 		"annotations": []
 	}
 }

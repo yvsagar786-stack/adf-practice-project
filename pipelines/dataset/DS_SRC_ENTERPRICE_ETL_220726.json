@@ -1,0 +1,12 @@
+{
+	"name": "DS_SRC_ENTERPRICE_ETL_220726",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SqlServer1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": []
+	}
+}

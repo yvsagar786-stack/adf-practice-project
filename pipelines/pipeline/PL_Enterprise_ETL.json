@@ -132,7 +132,7 @@
 							},
 							"inputs": [
 								{
-									"referenceName": "DS_SQL_CopyActivity",
+									"referenceName": "DS_ERP_ETL_SOURCE_SQL",
 									"type": "DatasetReference"
 								}
 							]

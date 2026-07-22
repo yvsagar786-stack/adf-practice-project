@@ -190,14 +190,6 @@
 				}
 			}
 		],
-		"parameters": {
-			"SchemaName": {
-				"type": "string"
-			},
-			"TableName": {
-				"type": "string"
-			}
-		},
 		"variables": {
 			"RunID": {
 				"type": "String"

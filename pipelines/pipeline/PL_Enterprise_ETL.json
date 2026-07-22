@@ -28,17 +28,6 @@
 				}
 			}
 		],
-		"parameters": {
-			"SchemaName": {
-				"type": "string"
-			},
-			"TableName": {
-				"type": "string"
-			},
-			"ContainerName": {
-				"type": "string"
-			}
-		},
 		"annotations": []
 	}
 }

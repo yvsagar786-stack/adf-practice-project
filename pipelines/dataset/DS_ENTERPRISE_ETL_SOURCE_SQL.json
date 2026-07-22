@@ -7,10 +7,12 @@
 		},
 		"parameters": {
 			"SchemaName": {
-				"type": "string"
+				"type": "string",
+				"defaultValue": "@dataset().SchemaName"
 			},
 			"TableName": {
-				"type": "string"
+				"type": "string",
+				"defaultValue": "@dataset().TableName"
 			}
 		},
 		"annotations": [],

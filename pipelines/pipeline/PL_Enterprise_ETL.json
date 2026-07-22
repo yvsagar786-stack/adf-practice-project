@@ -76,7 +76,7 @@
 							"userProperties": [],
 							"typeProperties": {
 								"variableName": "RunID",
-								"value": ""
+								"value": "@guid"
 							}
 						}
 					]

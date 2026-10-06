@@ -1,0 +1,21 @@
+{
+	"name": "DS_ADLS_Raw_Campaign_06102026",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_adls_marketing",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}

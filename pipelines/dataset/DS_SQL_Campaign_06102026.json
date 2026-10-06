@@ -1,0 +1,38 @@
+{
+	"name": "DS_SQL_Campaign_06102026",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SqlServer1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "CampaignID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "CampaignName",
+				"type": "varchar"
+			},
+			{
+				"name": "Channel",
+				"type": "varchar"
+			},
+			{
+				"name": "StartDate",
+				"type": "date"
+			},
+			{
+				"name": "EndDate",
+				"type": "date"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Campaign"
+		}
+	}
+}

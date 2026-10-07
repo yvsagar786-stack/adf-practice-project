@@ -1,0 +1,58 @@
+{
+	"name": "DS_SQL_CampaignPerformance_06102026",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SqlServer1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "PerformanceID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "CampaignID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "PerformanceDate",
+				"type": "date"
+			},
+			{
+				"name": "Impressions",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Clicks",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Conversions",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Spend",
+				"type": "decimal",
+				"precision": 12,
+				"scale": 2
+			},
+			{
+				"name": "Revenue",
+				"type": "decimal",
+				"precision": 12,
+				"scale": 2
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "CampaignPerformance"
+		}
+	}
+}
